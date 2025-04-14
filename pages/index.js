@@ -4,7 +4,10 @@ import items from "../data/items.json";
 export default function Home() {
   const [formData, setFormData] = useState({});
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
+  const [store, setStore] = useState("");
+  const [orderNo, setOrderNo] = useState("");
+  
   const [submitted, setSubmitted] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
 
@@ -23,39 +26,93 @@ export default function Home() {
   };
 
   const handleSubmit = async () => {
-    if (!name.trim() || !email.trim()) {
-      alert("Please enter your name and email.");
+    if (!name.trim()  || !store.trim()) {
+      alert("Please enter your name, store, and email.");
       return;
     }
+    const generatedEmail = `${name.trim().toLowerCase().replace(/\s+/g, '')}@gmail.com`;
+
     const response = await fetch("/api/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, formData }),
+      body: JSON.stringify({ name, email: generatedEmail, store, orderNo, formData }),
     });
-
+  
     if (response.ok) {
       setSubmitted(true);
     } else {
       alert("Error submitting the form.");
     }
   };
+  
 
   if (submitted) {
-    return <h2 style={{ textAlign: "center", padding: "2rem" }}>Thanks, {name}! Your request was sent.</h2>;
+    return (
+      <h2 style={{ textAlign: "center", padding: "2rem" }}>
+        Thanks, {name}! Your request was sent.
+      </h2>
+    );
   }
 
   return (
+    
     <div style={styles.container}>
+      
       <h1 style={styles.heading}><b>Contractor Order Form</b></h1>
+
+      <div style={styles.inputContainer}>
+  <label style={styles.xyz}>Recipient Name*</label>
+  <input
+    type="text"
+    placeholder="Recipient Name"
+    value={name}
+    style={styles.fullInput}
+    onChange={(e) => setName(e.target.value)}
+  />
+
+  <label style={styles.xyz}>Store Location*</label>
+  <select
+    value={store}
+    onChange={(e) => setStore(e.target.value)}
+    style={styles.fullInput}
+  >
+    <option value="">Select Store</option>
+    <option value="A-station">A-station</option>
+    <option value="D-station">D-station</option>
+    <option value="E-station">E-station</option>
+  </select>
+
+  <label style={styles.xyz}>Order Number</label>
+  <input
+    type="text"
+    placeholder="Optional Order Number"
+    value={orderNo}
+    style={styles.fullInput}
+    onChange={(e) => setOrderNo(e.target.value)}
+  />
+
+  {/* <label style={styles.xyz}>Email*</label>
+  <input
+    type="email"
+    placeholder="Your Email"
+    value={email}
+    style={styles.fullInput}
+    onChange={(e) => setEmail(e.target.value)}
+  /> */}
+</div>
 
       {Object.entries(items).map(([category, itemList]) => (
         <div key={category} style={styles.categoryBox}>
           <div
             style={styles.categoryHeader}
-            onClick={() => setOpenCategory(openCategory === category ? null : category)}
+            onClick={() =>
+              setOpenCategory(openCategory === category ? null : category)
+            }
           >
             <h2 style={styles.categoryTitle}>{category}</h2>
-            <span style={styles.toggleIcon}>{openCategory === category ? "−" : "+"}</span>
+            <span style={styles.toggleIcon}>
+              {openCategory === category ? "−" : "+"}
+            </span>
           </div>
 
           {openCategory === category && (
@@ -80,26 +137,8 @@ export default function Home() {
         </div>
       ))}
 
-      <div style={styles.inputContainer}>
-        <label style= {styles.xyz}>Name</label>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          style={styles.fullInput}
-          onChange={(e) => setName(e.target.value)}
-          
-        />
-        <label style= {styles.xyz}>Email</label>
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          style={styles.fullInput}
-          onChange={(e) => setEmail(e.target.value)}
-          
-        />
-      </div>
+
+
 
       <div style={styles.submitWrapper}>
         <button onClick={handleSubmit} style={styles.submitButton}>
@@ -127,7 +166,7 @@ const styles = {
     fontSize: "1.8rem",
   },
   categoryBox: {
-
+    marginTop: "2rem",
     borderRadius: "8px",
     marginBottom: "1rem",
     backgroundColor: "#393e41"
@@ -179,19 +218,20 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "10px",
+    
   },
   fullInput: {
     padding: "10px",
     fontSize: "1rem",
     width: "100%",
     boxSizing: "border-box",
-    backgroundColor: "#393e41",
-    color: "#fff",
+    backgroundColor: "#ffffff",
+    color: "#000000",
     border: "1px solid #555",
     borderRadius: "4px",
   },
   submitWrapper: {
-    position: "sticky",
+    // position: "sticky",
     bottom: 0,
     backgroundColor: "#f6f7eb",
     padding: "1rem 0",
