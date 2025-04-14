@@ -10,7 +10,7 @@
     { "id": "10022685", "name": "3.5*240 CABLE" },
     { "id": "10090503", "name": "3.5*300 CABLE" }
   ],
-  "mbox_and_clamp": [
+  "mbox  and  clamp": [
     { "id": "10118799", "name": "1 PH PRESSS FIT MBOX" },
     { "id": "10022815", "name": "1 PH MCB TYPE MBOX" },
     { "id": "10022817", "name": "CLAMP FOR 1PH & 3 PH" },
@@ -36,7 +36,7 @@
     { "id": "10022779", "name": "240 MM2 GLAND" },
     { "id": "10120545", "name": "300 MM2 GLAND" }
   ],
-  "gland_plates": [
+  "gland  plates": [
     { "id": "10059651", "name": "10 MM2 GLAND PLATE" },
     { "id": "10059652", "name": "25 MM2 GLAND PLATE" },
     { "id": "10022784", "name": "70 MM2 GLAND PLATE (D)" },
@@ -46,7 +46,7 @@
     { "id": "10067963", "name": "240 MM2 GLAND PLATE" },
     { "id": "10022786", "name": "300 MM2 GLAND PLATE" }
   ],
-  "mcb_and_cutout": [
+  "mcb  and  cutout": [
     { "id": "10058417", "name": "N LINK CUT OUT" },
     { "id": "10022607", "name": "16A MCB" },
     { "id": "10022608", "name": "40A MCB" },
@@ -56,7 +56,7 @@
     { "id": "10065013", "name": "16A 4 POLE MCB" },
     { "id": "10041072", "name": "100A FIBER GLASS CUTOUT" }
   ],
-  "fuses_and_fuse_bases": [
+  "fuses  and  fuse  bases": [
     { "id": "10038870", "name": "100A FUSE" },
     { "id": "10038455", "name": "125A FUSE" },
     { "id": "10038457", "name": "400A FUSE" },
@@ -88,7 +88,7 @@
     { "id": "10022743", "name": "120 MM2 ALU. FERRULE" },
     { "id": "10022745", "name": "240 MM2 ALU. FERRULE" }
   ],
-  "mbox_ferrules_and_mcb_lugs": [
+  "mbox  ferrules  and  mcb  lugs": [
     { "id": "10106247", "name": "6 MM2 CU FERRULE FOR METER" },
     { "id": "10106248", "name": "10 MM2 CU FERRULE FOR METER" },
     { "id": "10106249", "name": "16 MM2 CU FERRULE FOR METER" },
@@ -105,7 +105,7 @@
     { "id": "10080516", "name": "120 MM2 JOINT" },
     { "id": "10080539", "name": "240 MM2 JOINT" }
   ],
-  "muffs_and_pipes": [
+  "muffs  and  pipes": [
     { "id": "10105295", "name": "120 MM2 HDPE MUFF" },
     { "id": "10105296", "name": "160 MM2 HDPE MUFF" },
     { "id": "10038016", "name": "RCC MUFF" },
@@ -127,7 +127,7 @@
     { "id": "10038139", "name": "BUS BAR INSULATOR (CHINI)" },
     { "id": "10022475", "name": "ANTI CORROSIVE ORDER (FAIR & LOVELY)" }
   ],
-  "plate_earthing": [
+  "plate  earthing": [
     { "id": "10039936", "name": "EARTHING PLATE 1 NOS" },
     { "id": "10038304", "name": "EARTHING GI STRIP-1 NOS" },
     { "id": "10044045", "name": "EARTHING SYMBOL PLATE-1 NOS" },
@@ -138,13 +138,13 @@
     { "id": "10022959", "name": "95 MM2 LINE-6 MTR" },
     { "id": "10094265", "name": "EARTHING STRIP-1 NOS" }
   ],
-  "spike_earthing_set": [
+  "spike  earthing  set": [
     { "id": "10038305", "name": "EARTHING SPIKE-1 NOS" },
     { "id": "10038129", "name": "BLACK MASTIC TAPE-1 NOS" },
     { "id": "10038146", "name": "PVC INSU. GUARD WIRE - 08 NO-5 MTR" },
     { "id": "10059556", "name": "PVC INSU. GUARD WIRE - 12 NO-5 MTR" }
   ],
-  "tapes_and_tags": [
+  "tapes  and  tags": [
     { "id": "10022752", "name": "TAPE ROLL" },
     { "id": "10000304", "name": "BARRICADING TAPE" },
     { "id": "10042682", "name": "PRE WARNING TAP" },
@@ -162,7 +162,7 @@
     { "id": "10084216", "name": "7/16 CU WIRE (16 MM2)" },
     { "id": "10084214", "name": "19/16 CU WIRE (35 MM2)" }
   ],
-  "nails_and_screws": [
+  "nails  and  screws": [
     { "id": "10108749", "name": "1X3/8 NUT BOLT (A)" },
     { "id": "10010015", "name": "1X3/8 WASHER (D)" },
     { "id": "10022637", "name": "1X3/8 NUT BOLT (D)" },
