@@ -1,0 +1,209 @@
+{
+  "cables": [
+    { "id": "10022680", "name": "2*10 CABLE" },
+    { "id": "10022681", "name": "4*10 CABLE" },
+    { "id": "10037970", "name": "2*25 CABLE" },
+    { "id": "10003943", "name": "4*25 CABLE" },
+    { "id": "10037973", "name": "4*50 CABLE" },
+    { "id": "10037977", "name": "4*70 CABLE" },
+    { "id": "10037978", "name": "4*120 CABLE" },
+    { "id": "10022685", "name": "3.5*240 CABLE" },
+    { "id": "10090503", "name": "3.5*300 CABLE" }
+  ],
+  "mbox_and_clamp": [
+    { "id": "10118799", "name": "1 PH PRESSS FIT MBOX" },
+    { "id": "10022815", "name": "1 PH MCB TYPE MBOX" },
+    { "id": "10022817", "name": "CLAMP FOR 1PH & 3 PH" },
+    { "id": "10022816", "name": "3 PH MCB TYPE MBOX" },
+    { "id": "10022813", "name": "MOTIVE POWER MBOX" },
+    { "id": "10022818", "name": "CLAMP FOR MOTIVE POWER & LTP M BOX" },
+    { "id": "10038478", "name": "S4S MBOX" },
+    { "id": "10059770", "name": "CLAMP FOR S4S MBOX" },
+    { "id": "10038477", "name": "S3S MBOX" },
+    { "id": "10059767", "name": "CLAMP OF S3S MBOX" },
+    { "id": "10038732", "name": "LTP M BOX" },
+    { "id": "10116517", "name": "1 PH PRESSFIT M BOX COVER" },
+    { "id": "10112453", "name": "3 PH PRESSFIT M BOX COVER" }
+  ],
+  "glands": [
+    { "id": "10075881", "name": "2*10 MM2 GLAND" },
+    { "id": "10112845", "name": "4*10 MM2 GLAND" },
+    { "id": "10114117", "name": "4 X 10 GLAND WASHER" },
+    { "id": "10110593", "name": "PLASTIC GLAND" },
+    { "id": "10022781", "name": "25 MM2 GLAND" },
+    { "id": "10022777", "name": "70 MM2 GLAND" },
+    { "id": "10022778", "name": "120 MM2 GLAND" },
+    { "id": "10022779", "name": "240 MM2 GLAND" },
+    { "id": "10120545", "name": "300 MM2 GLAND" }
+  ],
+  "gland_plates": [
+    { "id": "10059651", "name": "10 MM2 GLAND PLATE" },
+    { "id": "10059652", "name": "25 MM2 GLAND PLATE" },
+    { "id": "10022784", "name": "70 MM2 GLAND PLATE (D)" },
+    { "id": "10067961", "name": "70 MM2 GLAND PLATE (A)" },
+    { "id": "10022785", "name": "120 MM2 GLAND PLATE (D)" },
+    { "id": "10067962", "name": "120 MM2 GLAND PLATE (A)" },
+    { "id": "10067963", "name": "240 MM2 GLAND PLATE" },
+    { "id": "10022786", "name": "300 MM2 GLAND PLATE" }
+  ],
+  "mcb_and_cutout": [
+    { "id": "10058417", "name": "N LINK CUT OUT" },
+    { "id": "10022607", "name": "16A MCB" },
+    { "id": "10022608", "name": "40A MCB" },
+    { "id": "10022609", "name": "63A MCB" },
+    { "id": "10095562", "name": "40A 4 POLE MCB" },
+    { "id": "10038470", "name": "63A 4 POLE MCB" },
+    { "id": "10065013", "name": "16A 4 POLE MCB" },
+    { "id": "10041072", "name": "100A FIBER GLASS CUTOUT" }
+  ],
+  "fuses_and_fuse_bases": [
+    { "id": "10038870", "name": "100A FUSE" },
+    { "id": "10038455", "name": "125A FUSE" },
+    { "id": "10038457", "name": "400A FUSE" },
+    { "id": "10006546", "name": "315 A FUSE" },
+    { "id": "10088154", "name": "63A FUSE" },
+    { "id": "10093609", "name": "200A FUSE" },
+    { "id": "10038458", "name": "160A FUSE BASE" },
+    { "id": "10091441", "name": "400A FUSE BASE" }
+  ],
+  "lugs": [
+    { "id": "10043746", "name": "4/6 MM2 CU LUG" },
+    { "id": "10038110", "name": "16 MM2 CU LUG" },
+    { "id": "10038106", "name": "25 MM2 CU LUG" },
+    { "id": "10022866", "name": "35 MM2 CU LUG" },
+    { "id": "10075895", "name": "10 MM2 ALU LUG" },
+    { "id": "10043747", "name": "16 MM2 ALU LUG" },
+    { "id": "10022871", "name": "25 MM2 ALU LUG" },
+    { "id": "10038098", "name": "50 MM2 ALU LUG" },
+    { "id": "10022872", "name": "70 MM2 ALU LUG" },
+    { "id": "10022873", "name": "95 MM2 ALU LUG" },
+    { "id": "10022874", "name": "120 MM2 ALU LUG" },
+    { "id": "10042655", "name": "240 MM2 ALU LUG" }
+  ],
+  "ferrules": [
+    { "id": "10038114", "name": "25 M2 CU FERRULE" },
+    { "id": "10022741", "name": "35 MM2 ALU. FERRULE" },
+    { "id": "10038112", "name": "50 MM2 ALU. FERRULE" },
+    { "id": "10022739", "name": "70 MM2 ALU. FERRULE" },
+    { "id": "10022743", "name": "120 MM2 ALU. FERRULE" },
+    { "id": "10022745", "name": "240 MM2 ALU. FERRULE" }
+  ],
+  "mbox_ferrules_and_mcb_lugs": [
+    { "id": "10106247", "name": "6 MM2 CU FERRULE FOR METER" },
+    { "id": "10106248", "name": "10 MM2 CU FERRULE FOR METER" },
+    { "id": "10106249", "name": "16 MM2 CU FERRULE FOR METER" },
+    { "id": "10106410", "name": "25 MM2 CU FERRULE FOR METER" },
+    { "id": "10109154", "name": "6 MM2 LUG FOR MCB" },
+    { "id": "10109155", "name": "10 MM2 LUG FOR MCB" },
+    { "id": "10109157", "name": "16 MM2 LUG FOR MCB" },
+    { "id": "10109156", "name": "25 MM2 LUG FOR MCB" }
+  ],
+  "joints": [
+    { "id": "10080515", "name": "DEAD JOINT-25 MM2" },
+    { "id": "10081931", "name": "TROWSER JOINT-25 MM2" },
+    { "id": "10080529", "name": "70 MM2 JOINT" },
+    { "id": "10080516", "name": "120 MM2 JOINT" },
+    { "id": "10080539", "name": "240 MM2 JOINT" }
+  ],
+  "muffs_and_pipes": [
+    { "id": "10105295", "name": "120 MM2 HDPE MUFF" },
+    { "id": "10105296", "name": "160 MM2 HDPE MUFF" },
+    { "id": "10038016", "name": "RCC MUFF" },
+    { "id": "10094651", "name": "ROAD CROSS BUMPER" },
+    { "id": "10092378", "name": "ROAD CROSS PIPE" },
+    { "id": "10092379", "name": "PIPE COUPLER" },
+    { "id": "10094714", "name": "HARD BARRICADE" }
+  ],
+  "misc": [
+    { "id": "10038375", "name": "120 MM2 SLEEVE" },
+    { "id": "10038376", "name": "240 MM2 SLEEVE" },
+    { "id": "10022981", "name": "COTTON WASTE" },
+    { "id": "10043720", "name": "PVC FLEXIBLE PIPE - 32 MM" },
+    { "id": "10023517", "name": "PVC FLEXIBLE PIPE - 19 MM" },
+    { "id": "10022772", "name": "AARI PANA (BIG)" },
+    { "id": "10038682", "name": "AARI PANA (SMALL)" },
+    { "id": "10044683", "name": "CAUTION BOARD" },
+    { "id": "10038134", "name": "Z LINK( PANEL)-400A" },
+    { "id": "10038139", "name": "BUS BAR INSULATOR (CHINI)" },
+    { "id": "10022475", "name": "ANTI CORROSIVE ORDER (FAIR & LOVELY)" }
+  ],
+  "plate_earthing": [
+    { "id": "10039936", "name": "EARTHING PLATE 1 NOS" },
+    { "id": "10038304", "name": "EARTHING GI STRIP-1 NOS" },
+    { "id": "10044045", "name": "EARTHING SYMBOL PLATE-1 NOS" },
+    { "id": "10038319", "name": "STAIN LESS STEEL NUT BOLT & WASHER-3 NOS" },
+    { "id": "10022637", "name": "GI NUT, BOLT & WASHER 1'' X 3/8'' -4 NOS" },
+    { "id": "10022873", "name": "95 MM2 ALU. LUG-4 NOS" },
+    { "id": "10038129", "name": "BLACK MASTIC TAPE-3 NOS" },
+    { "id": "10022959", "name": "95 MM2 LINE-6 MTR" },
+    { "id": "10094265", "name": "EARTHING STRIP-1 NOS" }
+  ],
+  "spike_earthing_set": [
+    { "id": "10038305", "name": "EARTHING SPIKE-1 NOS" },
+    { "id": "10038129", "name": "BLACK MASTIC TAPE-1 NOS" },
+    { "id": "10038146", "name": "PVC INSU. GUARD WIRE - 08 NO-5 MTR" },
+    { "id": "10059556", "name": "PVC INSU. GUARD WIRE - 12 NO-5 MTR" }
+  ],
+  "tapes_and_tags": [
+    { "id": "10022752", "name": "TAPE ROLL" },
+    { "id": "10000304", "name": "BARRICADING TAPE" },
+    { "id": "10042682", "name": "PRE WARNING TAP" },
+    { "id": "10006231", "name": "CABLE TIE-150 MM" },
+    { "id": "10006230", "name": "CABLE TIE-250 MM" },
+    { "id": "10038800", "name": "CABLE TAG" },
+    { "id": "10060613", "name": "JOINT TAG" },
+    { "id": "10038131", "name": "SCOTCH TAPE" }
+  ],
+  "wires": [
+    { "id": "10038142", "name": "10 MM2 ALU WIRE" },
+    { "id": "10038143", "name": "16 MM2 ALU WIRE" },
+    { "id": "10086440", "name": "TWIN (LC WIRE)" },
+    { "id": "10086339", "name": "7/20 CU WIRE (6 MM2)" },
+    { "id": "10084216", "name": "7/16 CU WIRE (16 MM2)" },
+    { "id": "10084214", "name": "19/16 CU WIRE (35 MM2)" }
+  ],
+  "nails_and_screws": [
+    { "id": "10108749", "name": "1X3/8 NUT BOLT (A)" },
+    { "id": "10010015", "name": "1X3/8 WASHER (D)" },
+    { "id": "10022637", "name": "1X3/8 NUT BOLT (D)" },
+    { "id": "10022676", "name": "2X1/4 NUT BOLT" },
+    { "id": "10010005", "name": "1X1/4 & 2X1/4 WASHER" },
+    { "id": "10022674", "name": "1X1/4 NUT BOLT" },
+    { "id": "10038334", "name": "8/19 SCREW (CUTOUT)" },
+    { "id": "10038339", "name": "8/50 SCREW (MOTIVE POWER)" },
+    { "id": "10038337", "name": "8/38 SCREW" },
+    { "id": "10038336", "name": "8/32 SCREW" },
+    { "id": "10038808", "name": "ROUND NAIL" },
+    { "id": "10044226", "name": "SADDLE PATTI" },
+    { "id": "10104808", "name": "CHINA SCREW" }
+  ],
+  "switches": [
+    { "id": "10038484", "name": "400A LTMD SWITCH W/O BUSBAR FOR 50A RULE" },
+    { "id": "10038450", "name": "400 A SWITCH WITH BUSBAR FOR 50A RULE" },
+    { "id": "10044199", "name": "250 A SWITCH WITH BUSBAR FOR 50A RULE" },
+    { "id": "10038452", "name": "400 A SWITCH W/O BUSBAR FOR RULE 50A" },
+    { "id": "10038482", "name": "G.I METER BOX FOR LTMD METER (BIG)" },
+    { "id": "10094500", "name": "125A LT SWITCH FUSE UNIT(WITH BUSBAR)" },
+    { "id": "10041167", "name": "250 AMP. SWITCH W/O BUS-BAR FOR RULE 50A" }
+  ],
+  "bbc and msp": [
+    { "id": "10095131", "name": "NUTLESS FUSE MSP" },
+    { "id": "10038239", "name": "400 A, 433V O/D MSP FOR TEMPERORY SUPPLY" },
+    { "id": "10038241", "name": "HORIZONTAL DBOX" },
+    { "id": "10059772", "name": "VETRICAL DBOX ( ASTN)" },
+    { "id": "10022618", "name": "VETRICAL DBOX ( DSTN)" },
+    { "id": "10038737", "name": "INDUSTRICAL DBOX" },
+    { "id": "10088157", "name": "NUT BOLT FOR BLOCK" },
+    { "id": "10022422", "name": "RCC BLOCK" }
+  ],
+  "branding msp set": [
+    { "id": "10106336", "name": "BRANDING MSP-1 NOS" },
+    { "id": "10107918", "name": "HORIZONTAL STRIP-1 NOS" },
+    { "id": "10107919", "name": "VERTICAL STRIP-1 NOS" },
+    { "id": "10039936", "name": "EARTHING PLATE GI-1 NOS" },
+    { "id": "10044045", "name": "EARTHING INDICATION LABEL-AL. TYPE-1 NOS" },
+    { "id": "10038319", "name": "SS BOLT NUT 12MM*40MM-3 NOS" },
+    { "id": "10108749", "name": "GI HEX BOLT & NUT 1\"X3/8\" WITH 2 WASHER-4 NOS" },
+    { "id": "10038129", "name": "BLACK MASTIC TAPE -3 NOS" }
+  ]
+}
