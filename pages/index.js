@@ -78,6 +78,7 @@ export default function Home() {
   >
     <option value="">Select Store</option>
     <option value="A-station">A-station</option>
+    <option value="B-station">B-station</option>
     <option value="D-station">D-station</option>
     <option value="E-station">E-station</option>
   </select>
