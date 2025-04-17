@@ -6,8 +6,10 @@ export default function Home() {
   const [name, setName] = useState("");
   // const [email, setEmail] = useState("");
   const [store, setStore] = useState("");
+  const [engineer, setEngineer] = useState("");
+  const [vender, setVender] = useState("");
   const [orderNo, setOrderNo] = useState("");
-  
+
   const [submitted, setSubmitted] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
 
@@ -26,25 +28,36 @@ export default function Home() {
   };
 
   const handleSubmit = async () => {
-    if (!name.trim()  || !store.trim()) {
+    if (!name.trim() || !store.trim()) {
       alert("Please enter your name, store, and email.");
       return;
     }
-    const generatedEmail = `${name.trim().toLowerCase().replace(/\s+/g, '')}@gmail.com`;
+    const generatedEmail = `${name
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "")}@gmail.com`;
 
     const response = await fetch("/api/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email: generatedEmail, store, orderNo, formData }),
+      body: JSON.stringify({
+        name,
+        email: generatedEmail,
+        store,
+        orderNo,
+        formData,
+        engineer,
+        vender,
+        
+      }),
     });
-  
+
     if (response.ok) {
       setSubmitted(true);
     } else {
       alert("Error submitting the form.");
     }
   };
-  
 
   if (submitted) {
     return (
@@ -55,44 +68,86 @@ export default function Home() {
   }
 
   return (
-    
     <div style={styles.container}>
-      
-      <h1 style={styles.heading}><b>Contractor Order Form</b></h1>
+      <h1 style={styles.heading}>
+        <b>Contractor Order Form</b>
+      </h1>
 
       <div style={styles.inputContainer}>
-  <label style={styles.xyz}>Recipient Name*</label>
-  <input
-    type="text"
-    placeholder="Recipient Name"
-    value={name}
-    style={styles.fullInput}
-    onChange={(e) => setName(e.target.value)}
-  />
+        <label style={styles.xyz}>Recipient Name*</label>
+        <input
+          type="text"
+          placeholder="Recipient Name"
+          value={name}
+          style={styles.fullInput}
+          onChange={(e) => setName(e.target.value)}
+        />
 
-  <label style={styles.xyz}>Store Location*</label>
-  <select
-    value={store}
-    onChange={(e) => setStore(e.target.value)}
-    style={styles.fullInput}
-  >
-    <option value="">Select Store</option>
-    <option value="A-station">A-station</option>
-    <option value="B-station">B-station</option>
-    <option value="D-station">D-station</option>
-    <option value="E-station">E-station</option>
-  </select>
+        <label style={styles.xyz}>Store Location*</label>
+        <select
+          value={store}
+          onChange={(e) => setStore(e.target.value)}
+          style={styles.fullInput}
+        >
+          <option value="">Select Store</option>
+          <option value="A-station">A-station</option>
+          <option value="B-station">B-station</option>
+          <option value="D-station">D-station</option>
+          <option value="E-station">E-station</option>
+        </select>
 
-  <label style={styles.xyz}>Order Number</label>
-  <input
-    type="text"
-    placeholder="Optional Order Number"
-    value={orderNo}
-    style={styles.fullInput}
-    onChange={(e) => setOrderNo(e.target.value)}
-  />
+        <label style={styles.xyz}>Engineer*</label>
+        <select
+          value={engineer}
+          onChange={(e) => setEngineer(e.target.value)}
+          style={styles.fullInput}
+        >
+          <option value="">Select An Engineer</option>
+          <option value="Raj Patel">Raj Patel</option>
+          <option value="Sanjay Pandya">Sanjay Pandya</option>
+          <option value="Vishnu Jariwala">Vishnu Jariwala</option>
+          <option value="Komal Bari">Komal Bari</option>
+          <option value="Dipak Mistry">Dipak Mistry</option>
+          <option value="Mihir Sharma">Mihir Sharma</option>
+          <option value="Anurag Mehta">Anurag Mehta</option>
+          <option value="Nitesh Sharma">Nitesh Sharma</option>
+          <option value="Harsh Parmar">Harsh Parmar</option>
+          <option value="Darshil Shah">Darshil Shah</option>
+          <option value="Vrushang Thakor">Vrushang Thakor</option>
+          <option value="Priyank Desai">Priyank Desai</option>
+          <option value="Mozzam mulla">Mozzam mulla</option>
+          <option value="Shriprakash Yadav">Shriprakash Yadav</option>
+          <option value="Nishit Doshi">Nishit Doshi</option>
+          <option value="Anuj Rajput">Anuj Rajput</option>
+        </select>
 
-  {/* <label style={styles.xyz}>Email*</label>
+        <label style={styles.xyz}>Vender*</label>
+        <select
+          value={vender}
+          onChange={(e) => setVender(e.target.value)}
+          style={styles.fullInput}
+        >
+          <option value="">Select A Vendor</option>
+          <option value="Chief (22106)">Chief (22106)</option>
+          <option value="ANR (23784)">ANR (23784)</option>
+          <option value="Active (22189)">Active (22189)</option>
+          <option value="Mayu (19683)">Mayu (19683)</option>
+          <option value="DA (23780)">DA (23780)</option>
+          <option value="Vinayak (23782)">Vinayak (23782)</option>
+          <option value="VN (22126)">VN (22126)</option>
+          <option value="Sai (24805)">Sai (24805)</option>
+        </select>
+
+        <label style={styles.xyz}>Order Number</label>
+        <input
+          type="text"
+          placeholder="Optional Order Number"
+          value={orderNo}
+          style={styles.fullInput}
+          onChange={(e) => setOrderNo(e.target.value)}
+        />
+
+        {/* <label style={styles.xyz}>Email*</label>
   <input
     type="email"
     placeholder="Your Email"
@@ -100,7 +155,7 @@ export default function Home() {
     style={styles.fullInput}
     onChange={(e) => setEmail(e.target.value)}
   /> */}
-</div>
+      </div>
 
       {Object.entries(items).map(([category, itemList]) => (
         <div key={category} style={styles.categoryBox}>
@@ -125,10 +180,16 @@ export default function Home() {
                   <input
                     type="number"
                     min="0"
+                    step="any"
                     placeholder="0"
                     style={styles.inputField}
                     onChange={(e) =>
-                      handleInputChange(category, item.name, e.target.value, item.id)
+                      handleInputChange(
+                        category,
+                        item.name,
+                        e.target.value,
+                        item.id
+                      )
                     }
                   />
                 </div>
@@ -137,9 +198,6 @@ export default function Home() {
           )}
         </div>
       ))}
-
-
-
 
       <div style={styles.submitWrapper}>
         <button onClick={handleSubmit} style={styles.submitButton}>
@@ -170,8 +228,7 @@ const styles = {
     marginTop: "2rem",
     borderRadius: "8px",
     marginBottom: "1rem",
-    backgroundColor: "#393e41"
-    
+    backgroundColor: "#393e41",
   },
   categoryHeader: {
     display: "flex",
@@ -180,7 +237,7 @@ const styles = {
     cursor: "pointer",
     backgroundColor: "#363636",
     color: "#fff",
-    borderRadius: "10px"
+    borderRadius: "10px",
   },
   categoryTitle: {
     margin: 0,
@@ -212,14 +269,13 @@ const styles = {
     backgroundColor: "#333",
     color: "#fff",
     border: "1px solid #666",
-    borderRadius: "10px 10px 10px 10px",  
+    borderRadius: "10px 10px 10px 10px",
   },
   inputContainer: {
     marginTop: "2rem",
     display: "flex",
     flexDirection: "column",
     gap: "10px",
-    
   },
   fullInput: {
     padding: "10px",
@@ -250,5 +306,5 @@ const styles = {
   xyz: {
     color: "#000000",
     fontWeight: "bold",
-  }
-}
+  },
+};
