@@ -21,7 +21,7 @@ export default function Home() {
         [id]: {
           id,
           name: item,
-          quantity: parseInt(quantity) || 0,
+          quantity: parseFloat(quantity) || 0,
         },
       },
     }));
