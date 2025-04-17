@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).send("Method Not Allowed");
 
-  const { name, email, store, orderNo, formData } = req.body;
+  const { name, email, store, orderNo, formData, engineer, vender } = req.body;
 
 
   const transporter = nodemailer.createTransport({
@@ -45,10 +45,11 @@ export default async function handler(req, res) {
     html: `
     
   <p><strong>Recipient Name:</strong> ${name}</p>
-  <p><strong>Email:</strong> ${email}</p>
   <p><strong>Store Location:</strong> ${store}</p>
+  <p><strong>Engineer:</strong> ${engineer}</p>
+  <p><strong>Vender:</strong> ${vender}</p>
   ${orderNo ? `<p><strong>Order Number:</strong> ${orderNo}</p>` : ""}
-  <p><strong>Requested Items:</strong></p>
+  
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
     <thead>
       <tr style="background-color: #e9c46a;">
