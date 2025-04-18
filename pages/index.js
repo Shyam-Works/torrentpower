@@ -4,7 +4,7 @@ import items from "../data/items.json";
 export default function Home() {
   const [formData, setFormData] = useState({});
   const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [store, setStore] = useState("");
   const [engineer, setEngineer] = useState("");
   const [vender, setVender] = useState("");
@@ -28,27 +28,24 @@ export default function Home() {
   };
 
   const handleSubmit = async () => {
-    if (!name.trim() || !store.trim()) {
-      alert("Please enter your name, store, and email.");
+    if (!name.trim() || !store.trim() || !email.trim() || !engineer.trim() || !vender.trim()) {
+      alert("Please enter all required fields.");
       return;
     }
-    const generatedEmail = `${name
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, "")}@gmail.com`;
+    
 
     const response = await fetch("/api/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name,
-        email: generatedEmail,
+        email,
         store,
         orderNo,
         formData,
         engineer,
         vender,
-        
+
       }),
     });
 
@@ -81,6 +78,14 @@ export default function Home() {
           value={name}
           style={styles.fullInput}
           onChange={(e) => setName(e.target.value)}
+        />
+        <label style={styles.xyz}>Recipient Email*</label>
+        <input
+          type="email"
+          placeholder="Recipient Name"
+          value={email}
+          style={styles.fullInput}
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <label style={styles.xyz}>Store Location*</label>
@@ -183,6 +188,11 @@ export default function Home() {
                     step="any"
                     placeholder="0"
                     style={styles.inputField}
+                    value={
+                      formData[category]?.[item.id]?.quantity !== undefined
+                        ? formData[category][item.id].quantity
+                        : ""
+                    }
                     onChange={(e) =>
                       handleInputChange(
                         category,
