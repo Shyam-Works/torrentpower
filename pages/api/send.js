@@ -36,11 +36,11 @@ export default async function handler(req, res) {
     .join('');
 
   // Fetch the list of emails from the .env variable and split them into an array
-  const recipients = process.env.EMAIL_TO.split(',');
+  //const recipients = process.env.EMAIL_TO.split(','); // now sending email to Recipient Email for verify
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: recipients,  // Using the array of emails here
+    to: email,  // Using the array of emails here
     subject: `New Order from ${name}`,
     html: `
     
