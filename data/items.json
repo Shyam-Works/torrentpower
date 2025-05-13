@@ -43,7 +43,8 @@
     { "id": "10067961", "name": "70 MM2 GLAND PLATE (A)" },
     { "id": "10022785", "name": "120 MM2 GLAND PLATE (D)" },
     { "id": "10067962", "name": "120 MM2 GLAND PLATE (A)" },
-    { "id": "10067963", "name": "240 MM2 GLAND PLATE" },
+    { "id": "10067963", "name": "240 MM2 GLAND PLATE (A)" },
+    { "id": "10022786", "name": "240 MM2 GLAND PLATE (D)" },
     { "id": "10022786", "name": "300 MM2 GLAND PLATE" }
   ],
   "mcb  and  cutout": [
@@ -82,6 +83,7 @@
   ],
   "ferrules": [
     { "id": "10038114", "name": "25 M2 CU FERRULE" },
+    { "id": "10038115", "name": "50 M2 CU FERRULE" },
     { "id": "10022741", "name": "35 MM2 ALU. FERRULE" },
     { "id": "10038112", "name": "50 MM2 ALU. FERRULE" },
     { "id": "10022739", "name": "70 MM2 ALU. FERRULE" },
