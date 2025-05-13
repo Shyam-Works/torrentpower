@@ -33,6 +33,10 @@ export default function Home() {
       return;
     }
     
+    if (!email.trim().toLowerCase().endsWith("@gmail.com")) {
+    alert("Only Gmail addresses (@gmail.com) are allowed.");
+    return;
+  }
 
     const response = await fetch("/api/send", {
       method: "POST",
@@ -79,7 +83,7 @@ export default function Home() {
           style={styles.fullInput}
           onChange={(e) => setName(e.target.value)}
         />
-        <label style={styles.xyz}>Recipient Email*</label>
+        <label style={styles.xyz}>Recipient Email* (yourEmail@gmail.com)</label>
         <input
           type="email"
           placeholder="Recipient Name"
